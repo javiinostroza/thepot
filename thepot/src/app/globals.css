@@ -38,6 +38,17 @@ body {
   font-weight: 700;
 }
 
+/* .inline {
+  text-align: center;
+} */
+
+.inline-segment {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ---------- Button Styles ---------- */
 
 .main-btn {
@@ -51,7 +62,7 @@ body {
   text-align: center;
   padding: 3px 0;
   position: relative;
-  margin: 30px auto;
+  margin: 30px 15px 0 15px
 }
 
 .red-btn {
@@ -69,6 +80,92 @@ body {
   box-shadow: 0px 10px #1F1347;
 }
 
-/* ---------- Input Text Styles ---------- */
+.add {
+  width: 31px;
+  height: 31px;
+  background-color: #0E42A8;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  padding: 3px 0;
+  margin: 30px 10px;
+}
+
+/* ---------- Input Styles ---------- */
+input {
+  height: 31px;
+  font-size: 12px;
+  stroke-width: 1px;
+  stroke: #1F1347;
+  padding: 3px 0;
+  position: relative;
+  margin: 30px auto;
+}
+
+.text {
+  width: 218px;
+  padding-left: 3px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.number {
+  width: 40px;
+  text-align: center;
+}
+
+/* ---------- Time Selector ---------- */
+input[type="radio"] {
+  width: 43px;
+  height: 23px;
+  border-radius: 5px;
+  border: 2px solid #1F1347;
+  background-color: white;
+  appearance: none;
+}
+
+input[type="radio"]:focus { /*no need, if you don't disable default appearance*/
+  outline: none; /*to remove the square border on focus*/
+}
+
+input[type="radio"]:checked { /*no need, if you don't disable default appearance*/
+  background-color: #FCD24F;
+  color: #1F1347;
+}
+
+input[type="radio"]:checked ~ span:first-of-type {
+  color: #1F1347;
+}
+
+label span:first-of-type {
+  position: relative;
+  left: -41px;
+  font-size: 12px;
+  color: #1F1347;
+}
+
+label span {
+  position: relative;
+  top: -35px;
+}
+
+
+
+
+
 /* ---------- Timing Styles ---------- */
 /* ---------- Card Styles ---------- */
+.stage-card {
+  width: 142px;
+  height: 37px;
+  background-color: #FC5658;
+  border-radius: 15px;
+  position: relative;
+}
+
+.word-card {
+  width: 218px;
+  height: 55px;
+  background-color: #FCD24F;
+  position: relative;
+}
