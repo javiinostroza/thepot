@@ -1,7 +1,7 @@
 'use client'
 
 
-import { inter } from "../../../fonts"
+import { inter } from "../fonts"
 
 type CardProps = {
     children?: React.ReactNode,

@@ -10,11 +10,11 @@ export default function TimeSelector({ children, id, } : SelectorProps) {
     // Corresponds to input type radio in HTML
     
     return (
-            <label>
-                <input id={id} name="radio" type="radio"/>
-                <span>
-                    {children}
-                </span>
-            </label>
+        <label className="label">
+            <input id={id} name="radio" type="radio"/>
+            <span>
+                {children}
+            </span>
+        </label>
     )
 }

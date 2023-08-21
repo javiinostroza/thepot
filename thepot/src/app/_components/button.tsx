@@ -1,7 +1,7 @@
 'use client'
 
 
-import { lzetta } from "../../../fonts"
+import { lzetta } from "../fonts"
 
 type ButtonProps = {
     classes: string,
